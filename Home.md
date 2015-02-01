@@ -12,6 +12,7 @@ My final goal is to write an application that is able to:
 * find exploits for these vulnerabilities (*)
 * use those exploits to gain access to the target (*)
 * install backdoors for later access
+
 (*) already implemented
 
 # **Portability**
