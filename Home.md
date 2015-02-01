@@ -6,12 +6,12 @@ The most complete and advanced IT security professional toolkit on Android.
 # **cSploit target**
 My final goal is to write an application that is able to:
 
-crack wifi
-enumerate local hosts (*)
-find vulnerabilities (*)
-find exploits for these vulnerabilities (*)
-use those exploits to gain access to the target (*)
-install backdoors for later access
+* crack wifi
+* enumerate local hosts (*)
+* find vulnerabilities (*)
+* find exploits for these vulnerabilities (*)
+* use those exploits to gain access to the target (*)
+* install backdoors for later access
 (*) already implemented
 
 # **Portability**
