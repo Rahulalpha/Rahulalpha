@@ -1,5 +1,5 @@
 ## introduction
-dSploit has a cool MetaSploit Framework ( MSF ) integration feature, which use it to launch exploits and control infected machines.
+cSploit has a cool MetaSploit Framework ( MSF ) integration feature, which use it to launch exploits and control infected machines.
 
 This features has been introduced by [tux_mind](https://github.com/tux-mind) on autumn of 2013. the first version used a Gentoo armv7a image with ruby 2,0 and MetaSploit Framework 4.4, it was about 800MB large.
 
@@ -20,17 +20,17 @@ thus we have to update it in the ruby update process.
 ### Gems
 MSF use a lot of gems, and many of them must be compiled from C sources, but Android does not comes with a compiler, so we have to compile them with our developer tools. those gems are not trivial to compile for android , it took a lot of work.
 
-We created a gem server at [gems.dsploit.net](http://gems.dsploit.net) that host compiled gems, thus to make the installation process download them pre-compiled, no compiler needed.
+We created a gem server that host compiled gems, thus to make the installation process download them pre-compiled, no compiler needed.
 
 ## The MetaSploit Framework RPCD
-MSF has a cool program called `msfrpcd`, that program will provide access to a MSF instance thought a RPC connection. dSploit start the RPC daemon and connect to him.
+MSF has a cool program called `msfrpcd`, that program will provide access to a MSF instance thought a RPC connection. cSploit start the RPC daemon and connect to him.
 
-After that dSploit it's ready to launch exploits and control opened sessions on pwned targets.
+After that cSploit it's ready to launch exploits and control opened sessions on pwned targets.
 
 On an opened session you can take control of a shell, clear event logs and many more. the target it's yours :wink:
 
 ## Missing features
-Currently there are many features of the MSF that dSploit does not use.
+Currently there are many features of the MSF that cSploit does not use.
 we want to take advantage of all the MSF features.
 these are features that are currently missing but are in our roadmap:
 
@@ -38,4 +38,4 @@ these are features that are currently missing but are in our roadmap:
   - hack printers
   - open VNC connections
 
-Any other missing features can be requested using our [issue tracker](https://github.com/evilsocket/dsploit/issues).
+Any other missing features can be requested using our [issue tracker](https://github.com/cSploit/android/issues).
