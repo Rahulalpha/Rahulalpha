@@ -13,11 +13,12 @@ git remote add upstream "https://github.com/rapid7/metasploit-framework.git"
 
 From now on every time you'll `git fetch` from the upstream remote you'll get the official MSF commits.
 
-TODO: describe merge
+TODO: describe merge  [merge or rebase? -ft]
 
 ### packaging
 
 put native gems into `/vendor` folder and zip the whole repo.
+
 TODO: explain how to cross-compile gems.
 
 ### deploy
