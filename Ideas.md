@@ -13,6 +13,6 @@ Comment on that issue to add more.
 * tabbed interface -> multiple attacks/scans at once
 * Metasploit Extra Console for Testing MSF Features
 * complete suite for domain/subdomain analysis/discovery
-* dns spoofing using ettercap
+* dns spoofing using ettercap ([done, no PR yet](https://github.com/gainan/android/tree/dns_spoof))
 * Allow to select any network interface available on the system. Pull Request: [#245](https://github.com/cSploit/android/pull/245)
 * MAC randomization when the app starts and prior to scan wireless networks.
