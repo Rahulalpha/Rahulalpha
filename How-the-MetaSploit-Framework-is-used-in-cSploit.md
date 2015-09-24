@@ -1,38 +1,38 @@
-## introduction
-cSploit has a cool MetaSploit Framework ( MSF ) integration feature, which use it to launch exploits and control infected machines.
+## Introduction
+cSploit integrates the [MetaSploit Framework](http://www.metasploit.com) (often abbreviated to msfw), an open-source computer security suite of Ruby scripts that simplifies the identification of potential security holes and automate the exploitation process via built-in *modules*.  msfw can be used to launch exploits and subsequently administrate exploited hosts via command and control *sessions*.
 
-This features has been introduced by [tux_mind](https://github.com/tux-mind) on autumn of 2013. the first version used a Gentoo armv7a image with ruby 2,0 and MetaSploit Framework 4.4, it was about 800MB large.
+The framework is entirely written in ruby and require some extra gems to work properly.
 
-In spring 2014 we used another approach, we ported ruby to android and use ruby and the MSF directly over the android libc, shrinking the size to about 150MB :blush:
+This msfw integration with cSploit was first introduced by [tux_mind](https://github.com/tux-mind) in autumn of 2013.  The first implementation used a Gentoo armv7a image with ruby 2.0 and MetaSploit Framework 4.4 and was about 800MB in size.
 
-The MetaSpoit Framework it's a collection of ruby scripts that simplify and automate the pwning process.
-it's entirely written in ruby and require some extra gems to work properly.
+In spring 2014, we used another approach:  We ported Ruby and the MSF directly over to use the native Android version of the standard C library, called [bionic](https://en.wikipedia.org/wiki/Bionic_(software)), shrinking the size to about 150MB in the process. :blush:
+
 
 ## Ruby
 ### The interpreter
-the ruby interpreter has been ported on the bionic libc to run over android devices, using the android NDK and editing a little the ruby sources. our ruby repo it's [here](https://github.com/tux-mind/ruby/tree/ruby_1_9_3) if you want see our modifications.
+As mentioned above, The Ruby interpreter has been ported to run over android device and is built with the standard android NDK.   Our ruby repository with the required modifications is [here](https://github.com/tux-mind/ruby/tree/ruby_1_9_3).
 
 ### Rubygems
-rubygems it's the gem that manage all the others. unfortunately the rubygems shipped with ruby 1.9.3 it's quite old and lacks some SSL certificates required to fetch additional gems.
+This is the gem that manages all the others.  Unfortunately the rubygems shipped with ruby 1.9.3 is quite old and lacks some SSL certificates required to fetch additional gems.
 
-thus we have to update it in the ruby update process.
+Thus we will have to update it in the ruby update process.  Stay tuned.
 
 ### Gems
-MSF use a lot of gems, and many of them must be compiled from C sources, but Android does not comes with a compiler, so we have to compile them with our developer tools. those gems are not trivial to compile for android , it took a lot of work.
+MSF uses a good number of gems, and many of them must be compiled from C sources.  But Android does not comes with a built-in compiler, so we opted to compile them with our developer tools in advance, then download them from the app.
 
-We created a gem server that host compiled gems, thus to make the installation process download them pre-compiled, no compiler needed.
+Those gems are not trivial to compile for Android-- it took a lot of work.  The result was a bundle of compiled gems that are delivered to the app via a gem server.  This makes the installation process a lot simpler, and allows us to update the gems as needed without requiring a compiler on Android itself.
 
 ## The MetaSploit Framework RPCD
-MSF has a cool program called `msfrpcd`, that program will provide access to a MSF instance thought a RPC connection. cSploit start the RPC daemon and connect to him.
+MSF has a cool program called `msfrpcd`.  This program provides access to a MSF instance through a RPC (remote procedure call) connection.
 
-After that cSploit it's ready to launch exploits and control opened sessions on pwned targets.
+cSploit starts the RPC daemon and connect to it.  After that, cSploit can make MSF launch exploits and control sessions on compromised targets.
 
-On an opened session you can take control of a shell, clear event logs and many more. the target it's yours :wink:
+Once a target host has been compromised, you can take control of a shell, clear event logs, etc. the target is yours :wink:
 
 ## Missing features
-Currently there are many features of the MSF that cSploit does not use.
-we want to take advantage of all the MSF features.
-these are features that are currently missing but are in our roadmap:
+MSF is a very sophisticated product, and there are many features of the MSF that cSploit currently does not use.  Eventually, we want to take advantage of all the MSF features.
+
+These are features that are currently missing but are in our roadmap:
 
   - use auxiliary modules
   - hack printers
