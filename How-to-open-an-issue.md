@@ -16,6 +16,6 @@ For your issue to be considered and solved ASAP please provide the following inf
     * Select the Session hijacker module works.
     * When clicking on the "Start" button fails (write down the message!) , it says: "Cannot start process".   
 
--    **A logcat** (very important!) taken while the application was running and the issue happened. [learn what it is and how to use it](http://forum.xda-developers.com/showthread.php?t=1726238)
+-    **A logcat** (very important!) taken while the application was running and the issue happened. [learn what it is and how to use it](http://forum.xda-developers.com/showthread.php?t=1726238) -- you can also find more information [about logcat here](https://wiki.cyanogenmod.org/w/logcat).
 
 Any issue which will not contain those details, will be signaled with a link to this page and closed from 24h to ∞ later.
