@@ -28,15 +28,17 @@ Make sure your phone/tablet with cSploit is connected on the same local network 
 
 When you launch cSploit, and after it has downloaded any required updates, you will be presented with discovered items on your network.  These may include routers, computers, phones, tablets, printers, and more.  You may also see a globe icon with your network and a "/24" after it, which in many local networks refers to the entire network (ie, relates to ALL the local hosts).
 
-<img src="http://i.imgur.com/SgYdSz7.jpg" width="250">
-
 You can press the **+** button to add your own hosts, which do not have to be in your local network.  (Again, do not add any hosts that you do not have explicit permission to test.)
 
 If all goes well, you'll see an item called "METASPLOITABLE" in the list.  If you select it, you can continue to...
 
 ### Step Three:  Scan for services with Service Inspector
 
-Now you're greeted with a list of options pertaining to this host, METASPLOITABLE.  You can do a lot of things here, but we're going to focus on the Service Inspector, which uses a scanner called [nmap](https://en.wikipedia.org/wiki/Nmap) to probe the METASPLOITABLE virtual machine to see what services are available.
+Now you're greeted with a list of options pertaining to this host, METASPLOITABLE.
+
+<img src="http://i.imgur.com/SgYdSz7.jpg" width="250">
+
+You can do a lot of things here, but we're going to focus on the Service Inspector, which uses a scanner called [nmap](https://en.wikipedia.org/wiki/Nmap) to probe the METASPLOITABLE virtual machine to see what services are available.
 
 So if you press the **Start** button and wait a few moments, you'll get a list of discovered potential services that appear to have been "turned on" on the METASPLOITABLE host, along with their associated port numbers.
 
