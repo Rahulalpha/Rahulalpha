@@ -22,13 +22,13 @@ The goal though is to have it running so it appears as a host on your local netw
  
 ### Step Two:  Start cSploit and scan the local network
 
-<img src="http://i.imgur.com/cFll5P9.jpg" width="200">
+<img src="http://i.imgur.com/cFll5P9.jpg" width="250">
 
 Make sure your phone/tablet with cSploit is connected on the same local network as the Metasploitable2 virtual machine you just installed.
 
 When you launch cSploit, and after it has downloaded any required updates, you will be presented with discovered items on your network.  These may include routers, computers, phones, tablets, printers, and more.  You may also see a globe icon with your network and a "/24" after it, which in many local networks refers to the entire network (ie, relates to ALL the local hosts).
 
-<img src="http://i.imgur.com/SgYdSz7.jpg" width="200">
+<img src="http://i.imgur.com/SgYdSz7.jpg" width="250">
 
 You can press the **+** button to add your own hosts, which do not have to be in your local network.  (Again, do not add any hosts that you do not have explicit permission to test.)
 
@@ -40,7 +40,7 @@ Now you're greeted with a list of options pertaining to this host, METASPLOITABL
 
 So if you press the **Start** button and wait a few moments, you'll get a list of discovered potential services that appear to have been "turned on" on the METASPLOITABLE host, along with their associated port numbers.
 
-<img src="http://i.imgur.com/cYgBUd8.jpg " width="200">
+<img src="http://i.imgur.com/cYgBUd8.jpg " width="250">
 
 Once you have the list, you can hit the back button and we'll search for exploits for those services...
 
@@ -48,9 +48,13 @@ Once you have the list, you can hit the back button and we'll search for exploit
 
 Now go to the **Exploit Finder** and again, press **Start**.  You will see a list of "exploits", which are special instructions designed to penetrate a known vulnerability in the service that was scanned in the previous step.
 
+<img src="http://i.imgur.com/zQPkjKl.jpg" width=250>
+
 To "launch" the exploits, the cSploit app uses a system called the **[Metasploit framework](https://www.metasploit.com/)**, sometimes abbreviated to **msf** or **msfw**, behind the scenes.  When cSploit first starts, the "Metasploit Remote Procedure Call Daemon (RPCD)" needs to start running, and cSploit will connect to it.  This happens automatically, but can take a while-- a few minutes sometimes-- and cSploit lets you do other things while it's connecting.
 
 You want to be sure that it's connected before you try to launch an exploit.  Check if Metasploit's RPCD is connected by looking at the notification (ie, the pulldown screen) area at the top of Android.  It gets updated as the connection status changes, so once it's green and says "Connected to Metasploit", you should be good to go.
+
+<img src="http://i.imgur.com/OoArPP7.png" width=250>
 
 But back to the exploit list-- many of these exploits won't work for one reason or another-- maybe they are old or patched now or depend on specific conditions that aren't quite available-- but for the METASPLOITABLE2 package in our example, there should be one called **[exploit/unix/ftp/vsftpd_234_backdoor](http://www.rapid7.com/db/modules/exploit/unix/ftp/vsftpd_234_backdoor)** that can do the trick.  If you select it, then choose **Launch**, you should see a message **Job started**.
 
@@ -58,10 +62,10 @@ But back to the exploit list-- many of these exploits won't work for one reason 
 
 Now hit the back button again to go back to the METASPLOITABLE-related options.  Under the **Sessions** button, you should see a new entry:  **Command shell**
 
-<img src="http://i.imgur.com/y0emBnc.jpg" width=200>
+<img src="http://i.imgur.com/y0emBnc.jpg" width=250>
 
 Press that, and you should hopefully be given a console screen.  If you type `whoami` you should be told that you are in the `root` account!  And you can remove files, create users, etc.
 
-<img src="http://i.imgur.com/c0dxvXv.jpg" width=200>
+<img src="http://i.imgur.com/c0dxvXv.jpg" width=250>
 
 If this was a real system and not a test VM, your machine would be owned!  This would be a pretty persuasive sign that it's past time to update your FTP server on that machine.
