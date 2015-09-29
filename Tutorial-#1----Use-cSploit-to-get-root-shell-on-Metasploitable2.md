@@ -18,7 +18,7 @@ You can read more about Metasploitable at Rapid7's site [here](https://community
 
 You can use something like [VirtualBox](https://www.virtualbox.org/wiki/Downloads) to run Metasploitable.  There is documentation available elsewhere on setting this up, as the instructions will vary depending on the operating system of your PC.
 
-The goal though is to have it running so it appears as a host on your local network.  A simulation of a vulnerable machine that you will use to test cSploit's functionality.
+The goal though is to have it running so it appears as a host on your local network.  It's a simulation of a vulnerable machine that you will use to test cSploit's functionality.
  
 ### Step Two:  Start cSploit and scan the local network
 
