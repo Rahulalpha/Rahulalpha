@@ -54,4 +54,4 @@ Now hit the back button again to go back to the METASPLOITABLE-related options. 
 
 Press that, and you should hopefully be given a console screen.  If you type `whoami` you should be told that you are in the `root` account!  And you can remove files, create users, etc.
 
-If this were a real system and not a test VM, your machine would be owned!  This would be a pretty persuasive sign that it's past time to update your FTP server on that machine.
+If this was a real system and not a test VM, your machine would be owned!  This would be a pretty persuasive sign that it's past time to update your FTP server on that machine.
