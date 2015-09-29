@@ -22,6 +22,8 @@ The goal though is to have it running so it appears as a host on your local netw
  
 ### Step Two:  Start cSploit and scan the local network
 
+Make sure your phone/tablet with cSploit is connected on the same local network as the Metasploitable2 virtual machine you just installed.
+
 When you launch cSploit, and after it has downloaded any required updates, you will be presented with discovered items on your network.  These may include routers, computers, phones, tablets, printers, and more.  You may also see a globe icon with your network and a "/24" after it, which in many local networks refers to the entire network (ie, relates to ALL the local hosts).
 
 You can press the **+** button to add your own hosts, which do not have to be in your local network.  (Again, do not add any hosts that you do not have explicit permission to test.)
