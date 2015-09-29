@@ -8,7 +8,7 @@ It's done in five basic steps.  All from your Android device.
 
 Okay, that said, let's get started.
 
-### Step One:  Set up a vulnerable computer on your network for testing.
+### Step One:  Set up a vulnerable computer on your network for testing
 
 Yes, you are going to install a "machine" (okay, a virtual machine, or "VM") with known security holes to practice on.  For our tutorial, let's take a look at the [Metasploitable2 virtual machine](http://sourceforge.net/projects/metasploitable/files/Metasploitable2/), a deliberately vulnerable linux VM made way back in 2012.  As the description notes:
 
