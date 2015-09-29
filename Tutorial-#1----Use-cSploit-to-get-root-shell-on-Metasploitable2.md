@@ -22,9 +22,13 @@ The goal though is to have it running so it appears as a host on your local netw
  
 ### Step Two:  Start cSploit and scan the local network
 
+<img src="http://i.imgur.com/cFll5P9.jpg" width="200">
+
 Make sure your phone/tablet with cSploit is connected on the same local network as the Metasploitable2 virtual machine you just installed.
 
 When you launch cSploit, and after it has downloaded any required updates, you will be presented with discovered items on your network.  These may include routers, computers, phones, tablets, printers, and more.  You may also see a globe icon with your network and a "/24" after it, which in many local networks refers to the entire network (ie, relates to ALL the local hosts).
+
+<img src="http://i.imgur.com/SgYdSz7.jpg" width="200">
 
 You can press the **+** button to add your own hosts, which do not have to be in your local network.  (Again, do not add any hosts that you do not have explicit permission to test.)
 
@@ -35,6 +39,8 @@ If all goes well, you'll see an item called "METASPLOITABLE" in the list.  If yo
 Now you're greeted with a list of options pertaining to this host, METASPLOITABLE.  You can do a lot of things here, but we're going to focus on the Service Inspector, which uses a scanner called [nmap](https://en.wikipedia.org/wiki/Nmap) to probe the METASPLOITABLE virtual machine to see what services are available.
 
 So if you press the **Start** button and wait a few moments, you'll get a list of discovered potential services that appear to have been "turned on" on the METASPLOITABLE host, along with their associated port numbers.
+
+<img src="http://i.imgur.com/cYgBUd8.jpg " width="200">
 
 Once you have the list, you can hit the back button and we'll search for exploits for those services...
 
@@ -52,6 +58,10 @@ But back to the exploit list-- many of these exploits won't work for one reason 
 
 Now hit the back button again to go back to the METASPLOITABLE-related options.  Under the **Sessions** button, you should see a new entry:  **Command shell**
 
+<img src="http://i.imgur.com/y0emBnc.jpg" width=200>
+
 Press that, and you should hopefully be given a console screen.  If you type `whoami` you should be told that you are in the `root` account!  And you can remove files, create users, etc.
+
+<img src="http://i.imgur.com/c0dxvXv.jpg" width=200>
 
 If this was a real system and not a test VM, your machine would be owned!  This would be a pretty persuasive sign that it's past time to update your FTP server on that machine.
