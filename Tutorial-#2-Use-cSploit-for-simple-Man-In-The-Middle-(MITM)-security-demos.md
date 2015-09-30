@@ -38,11 +38,11 @@ To get an idea of what a MITM can do, visit a web site that does not use encrypt
 
 [IMAGE HERE]
 
-Back to the New York Times.  Say the headline currently says:  **CURRENT HEADLINE IN SCREENSHOT** and you want to change it to **cSploit Voted Best Android App** for everyone in your local network.
+Back to the New York Times.  Say the headline currently says:  **CURRENT HEADLINE IN SCREENSHOT** and you want to change it to **cSploit Voted Best Android App** for everyone in your local network (and with emphasis again, you must have all appropriate permissions to do something like this!)
 
 Select the item called **Custom Filter**, and in the **From** column, type "**CURRENT HEADLINE**".  Be sure to get the capitalization and spacing correct.  Then, in the **To** column to its right type "cSploit Voted Best Android App".  Then press **OK**.
 
-You should see a spinning progress icon over the **Custom Filter** item.  If all goes right, within a few moments, anyone visiting nytimes.com should see the new headline has replaced the original:
+You should see a spinning progress icon over the **Custom Filter** item.  If all goes right, within a few moments, anyone visiting nytimes.com on the local network should see the new headline has replaced the original:
 
 [IMAGE HERE]
 
