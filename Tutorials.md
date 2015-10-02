@@ -1,4 +1,4 @@
-## The quickest way to learn using cSpoit
+## The quickest way to learn using cSploit
 
   1. [Use cSploit to get root shell on Metasploitable2]
   2. [Use cSploit for simple Man In The Middle (MITM) security demos]
