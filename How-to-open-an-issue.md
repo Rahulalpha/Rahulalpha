@@ -8,6 +8,7 @@ For your issue to be considered and solved ASAP please provide the following inf
 -    Your ROM name and version.
 -    The version of cSploit your are running [if not sure, download the latest release and try to reproduce the problem with it](https://github.com/cSploit/android/releases).
 -    As many details as possible on the network you are running cSploit on.
+-    Whether or not you are using Xposed or any Xposed modules.  (By the way, if you are-- don't)
 -    A *detailed* description of the issue you have:
  * if it is a MITM feature not working, please specify if the other MITM features and parts of the app are working on your network. For example:
    * App start ups ok.
