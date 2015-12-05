@@ -1,5 +1,5 @@
 ### Disclaimer
-
+This site can be hacked!
 Use cSploit on:
 
   - **your phone** knowing that we take no responsibility
