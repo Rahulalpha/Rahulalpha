@@ -1,4 +1,4 @@
-Welcome to the dsploit wiki!
+Welcome to the cSploit wiki!
 
 ## **cSploit**
 The most complete and advanced IT security professional toolkit on Android.
