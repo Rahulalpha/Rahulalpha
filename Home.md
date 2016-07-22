@@ -7,7 +7,7 @@ The most complete and advanced IT security professional toolkit on Android.
 My final goal is to write an application that is able to:
 
 - [ ] Crack wifi
-- [x] enumerate local hosts)
+- [x] enumerate local hosts
 - [x] find vulnerabilities
 - [x] find exploits for these vulnerabilities
 - [x] use those exploits to gain access to the target
