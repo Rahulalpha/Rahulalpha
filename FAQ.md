@@ -1,5 +1,3 @@
-## **FAQ**
-
 ### Q: My antivirus says cSploit is infected!
 ### A: Don't panic.
 Many antivirus tools will flag cSploit as malware simply because of what it can be used to do. If you read the source code, you'll see that cSploit doesn't do anything malicious to you on its own, it is simply a tool malicious people might use. So, as long as you're not malicious, you're (probably) okay.
