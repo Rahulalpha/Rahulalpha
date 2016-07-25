@@ -8,6 +8,7 @@ We are *not* saying to disregard your antivirus, though. Even with trusted progr
 Antivirus Program | Threat Detected
 --------------------------|----------------------
 AVG | Android/Deng.REK | 20160621
+AegisLab |Hacktool.Androidos.Dsploit!c
 AhnLab-V3 |Android-AppCare/DSploit.1a0cb
 Alibaba |A.H.Sys.HacktoolDSploit.A
 Antiy-AVL |HackTool[:HEUR]/Android.DSploit.2
