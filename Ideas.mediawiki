@@ -17,3 +17,4 @@ Create a new issue with any suggestion you have.
 * Allow to select any network interface available on the system. Pull Request: [#245](https://github.com/cSploit/android/pull/245)
 * MAC randomization when the app starts and prior to scan wireless networks.
 * extend the session hijacker module functionality. https://github.com/cSploit/android/issues/295
+* DOS attack to a specified IP address
