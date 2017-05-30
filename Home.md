@@ -16,7 +16,7 @@ My final goal is to write an application that is able to:
 # **Portability**
 Thanks to the new core, cSploit will be easily portable.
 
-Basically it can run on any UNIX-based system, but for now only andorid is supported. When I reach a beta-state version i will consider working on iOS, OSX, GTK+ and QT.
+Basically it can run on any UNIX-based system, but for now only android is supported. When I reach a beta-state version i will consider working on iOS, OSX, GTK+ and QT.
 
 # **Contribute to the code**
 If you want to contribute fork the repo you want to contribute to and create a pull request when you're done. If you actively contribute to the project I will ask you to join the team.
