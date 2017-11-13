@@ -22,7 +22,7 @@ Basically it can run on any UNIX-based system, but for now only android is suppo
 If you want to contribute fork the repo you want to contribute to and create a pull request when you're done. If you actively contribute to the project I will ask you to join the team.
 
 # **Support us**
-please donate to cSpoit to support our efforts and resources. Thank you :heart:
+please donate to cSploit to support our efforts and resources. Thank you :heart:
 
 # **Story**
 After being initially created by evilsocket, I ( tux-mind ) started working on dSploit in summer 2012, i forked it and added the following features:
