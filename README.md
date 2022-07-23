@@ -1,4 +1,4 @@
-### Hi there 👋
+Hi I am rahul  realme### Hi there 👋
 
 <!--
 **Rahulalpha/Rahulalpha** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
